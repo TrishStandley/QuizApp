@@ -1,0 +1,265 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/img"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Check Your General Knowledge about America"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:textColor="#7986CB"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="1) Which locations are cities within the U.S.?"/>
+        <CheckBox
+            style="@style/CheckBoxStyle"
+            android:id="@+id/checkbox_utah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/Utah"
+            />
+        <CheckBox
+            style="@style/CheckBoxStyle"
+            android:id="@+id/checkbox_atlanta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/Atlanta"
+            />
+        <CheckBox
+            style="@style/CheckBoxStyle"
+            android:id="@+id/checkbox_miami"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/Miami"
+            />
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="2) _________was the first President of the USA."/>
+        <RadioGroup
+            android:id="@+id/question_two"
+            style="@style/RadioButtonStyle">
+            <RadioButton
+                android:id="@+id/george_washington"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/GeorgeWashington" />
+            <RadioButton
+                android:id="@+id/abraham_lincoln"
+                style="@style/RadioButtonStyle"
+                android:text="@string/AbrahamLincoln"
+                android:onClick="onRadioButtonClicked"
+                />
+            <RadioButton
+                android:id="@+id/john_kennedy"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/JohnKennedy" />
+        </RadioGroup>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="3) How many stars are on the USA flag?"/>
+        <RadioGroup
+            android:id="@+id/question_three"
+            style="@style/RadioButtonStyle">
+            <RadioButton
+                android:id="@+id/stars_50"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="50" />
+            <RadioButton
+                android:id="@+id/stars_55"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="55"
+                />
+            <RadioButton
+                android:id="@+id/stars_60"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="60" />
+        </RadioGroup>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="4) Mt. Rushmore is in ___________."/>
+        <RadioGroup
+            android:id="@+id/question_four"
+            style="@style/RadioButtonStyle">
+            <RadioButton
+                android:id="@+id/nevada"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Nevada" />
+            <RadioButton
+                android:id="@+id/iowa"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Iowa"
+                />
+            <RadioButton
+                android:id="@+id/south_dakota"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/SouthDakota" />
+        </RadioGroup>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="5) Name of the first African American to be elected to the presidency."/>
+        <EditText
+            android:id="@+id/question_five"
+            style="@style/EditTextStyle"
+            />
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="6) The biggest state is ________."/>
+        <RadioGroup
+            android:id="@+id/question_six"
+            style="@style/RadioButtonStyle">
+            <RadioButton
+                android:id="@+id/california"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/California" />
+            <RadioButton
+                android:id="@+id/texas"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Texas"
+                />
+            <RadioButton
+                android:id="@+id/alaska"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Alaska" />
+        </RadioGroup>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="7) The longest river in the USA is __________."/>
+        <RadioGroup
+            android:id="@+id/question_seven"
+            style="@style/RadioButtonStyle">
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:id="@+id/missouri"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Missouri"
+                />
+            <RadioButton
+                android:id="@+id/mississippi"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Mississippi"
+                />
+            <RadioButton
+                android:id="@+id/yukon"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Yukon" />
+        </RadioGroup>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="8) What do Americans celebrate on July 4th?"/>
+        <RadioGroup
+            android:id="@+id/question_eight"
+            style="@style/RadioButtonStyle">
+            <RadioButton
+                android:id="@+id/the_revolution"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/TheRevolution"
+                />
+            <RadioButton
+                android:id="@+id/independence_day"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/IndependenceDay"
+                />
+            <RadioButton
+                android:id="@+id/the_discovery_of_america"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/TheDiscoveryofAmerica" />
+        </RadioGroup>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="9) Who was the civil rights leader who fought through nonviolent action?"/>
+        <RadioGroup
+            android:id="@+id/question_nine"
+            style="@style/RadioButtonStyle">
+            <RadioButton
+                android:id="@+id/thomas_paine"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/ThomasPaine"
+                />
+            <RadioButton
+                android:id="@+id/martin_luther_king_jr"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/MartinLutherKingJr"
+                />
+            <RadioButton
+                android:id="@+id/john_kennedy1"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/JohnKennedy" />
+        </RadioGroup>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="10) Where is the White House located?"/>
+        <RadioGroup
+            android:id="@+id/question_ten"
+            style="@style/RadioButtonStyle"
+            >
+            <RadioButton
+                android:id="@+id/new_york"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/NewYork"
+                />
+            <RadioButton
+                android:id="@+id/houston"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Houston"
+                />
+            <RadioButton
+                android:id="@+id/washington_dc"
+                style="@style/RadioButtonStyle"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/WashingtonDC"
+                />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="onClick"
+            android:text="Submit"
+            android:textColor="#000000"
+            android:textAllCaps="true"
+            android:backgroundTint="#0288D1"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
+

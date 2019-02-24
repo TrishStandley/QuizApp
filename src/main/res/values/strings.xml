@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="Utah">Utah</string>
+    <string name="Atlanta">Atlanta</string>
+    <string name="Miami">Miami</string>
+    <string name="GeorgeWashington">GeorgeWasthington</string>
+    <string name="AbrahamLincoln">AbrahamLincoln</string>
+    <string name="JohnKennedy">JohnKennedy</string>
+    <string name="Nevada">Nevada</string>
+    <string name="Iowa">Iowa</string>
+    <string name="SouthDakota">SouthDakota</string>
+    <string name="California">California</string>
+    <string name="Texas">Texas</string>
+    <string name="Alaska">Alaska</string>
+    <string name="Missouri">Missouri</string>
+    <string name="Mississippi">Mississippi</string>
+    <string name="Yukon">Yukon</string>
+    <string name="TheRevolution">TheRevolution</string>
+    <string name="IndependenceDay">IndependenceDay</string>
+    <string name="TheDiscoveryofAmerica">TheDiscoveryofAmerica</string>
+    <string name="ThomasPaine">ThomasPaine</string>
+    <string name="MartinLutherKingJr">MartinLutherKingJr</string>
+    <string name="NewYork">NewYork</string>
+    <string name="Houston">Houston</string>
+    <string name="WashingtonDC">WashingtonDC</string>
+
+
+</resources>
+
+
+

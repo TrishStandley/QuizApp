@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- App branding color for the app bar -->
+        <item name="colorPrimary">#424242</item>
+        <!-- Darker variant for the status bar and contextual bars -->
+        <item name="colorPrimaryDark">#212121</item>
+        <!-- Theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">#536DFE</item>
+        <item name="android:textColor">#F5F5F5</item>
+    </style>
+
+    <!-- Style for header text in the order form -->
+    <style name="HeaderTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+    <style name="CheckBoxStyle">
+        <item name="android:buttonTint" tools:targetApi="lollipop">#FFFFFF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="RadioButtonStyle">
+        <item name="android:buttonTint" tools:targetApi="lollipop">#FFFFFF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">-</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">#FFFFFF</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+    </style>
+
+</resources>
